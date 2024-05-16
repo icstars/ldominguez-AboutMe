@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Define the title of the HTML page -->
@@ -7,15 +8,35 @@
     <style>
       /* Apply styles to all elements */
       * {
+        box-sizing: border-box;
       }
 
       p {
         color: darksalmon;
         background-color: slateblue;
         width: 200px;
-        border-radius: 500px 500px 500px 500px;
+        border-radius: 500px;
         padding: 10px;
-        margin: 50px;
+        margin: 50px auto; /* Center the paragraph */
+      }
+
+      .center-content {
+        text-align: center;
+      }
+
+      .styled-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: violet;
+        text-decoration: none;
+        border: 2px solid violet;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .styled-button a:hover {
+        background-color: violet;
+        color: white;
       }
     </style>
 
@@ -24,31 +45,28 @@
   </head>
 
   <body>
-    <center>
+    <div class="center-content">
       <!-- Insert an image -->
       <img
         src="https://w0.peakpx.com/wallpaper/450/384/HD-wallpaper-big-chungus-bugs-bunny.jpg"
+        alt="Big Chungus"
       />
       <h1 style="color: cornflowerblue">Luis Dominguez</h1>
       <p style="font-size: large">Hello my name is Luis.</p>
       <p>This is a test</p>
 
       <a
-        button="style"
         style="color: violet"
         href="https://www.linkedin.com/in/luis-dominguez-b5b9871b6/"
         target="_blank"
         >Follow my professional journey!</a
       >
 
-      <h2>
-        <button>
-          <!-- Insert a link inside the button -->
-          <a href="https://i.ytimg.com/vi/CHxWZMZCwS0/maxresdefault.jpg"
-            >Please Click
-          </a>
-        </button>
+      <h2 class="styled-button">
+        <a href="https://i.ytimg.com/vi/CHxWZMZCwS0/maxresdefault.jpg"
+          >Please Click</a
+        >
       </h2>
-    </center>
+    </div>
   </body>
 </html>
