@@ -1,0 +1,15 @@
+img {
+  width: 200px;
+  /* height: 350px; */
+  border-radius: 500px 500px 500px 500px;
+}
+
+body {
+  background-color: tomato;
+  font-family: Trebuchet MS;
+}
+
+button {
+  width: 200px;
+  border-radius: 500px 500px 500px 500px;
+}
