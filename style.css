@@ -1,7 +1,7 @@
 img {
   width: 150px;
   /* height: 350px; */
-  border-radius: 100px 100px 500px 500px;
+  border-radius: 500px 500px 500px 500px;
 }
 
 body {
@@ -12,4 +12,30 @@ body {
 button {
   width: 200px;
   border-radius: 500px 500px 500px 500px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(238, 170, 23);
+  margin: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+  background-color: blueviolet;
+}
+
+h1 {
+  color: rgb(238, 170, 23);
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
 }
