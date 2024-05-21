@@ -1,17 +1,16 @@
 img {
   width: 150px;
-  /* height: 350px; */
-  border-radius: 500px 500px 500px 500px;
+  border-radius: 500px;
 }
 
 body {
   background-color: tomato;
-  font-family: Trebuchet MS;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 button {
   width: 200px;
-  border-radius: 500px 500px 500px 500px;
+  border-radius: 500px;
 }
 
 a {
@@ -19,11 +18,10 @@ a {
   color: rgb(238, 170, 23);
   margin: 10px;
   font-size: 20px;
-  font-style: italic;
   font-family: "Pacifico", cursive;
   font-weight: 400;
-  font-style: normal;
 }
+
 a:hover {
   background-color: white;
   border: 1px solid black;
