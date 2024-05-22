@@ -21,7 +21,7 @@ a {
   font-family: "Pacifico", cursive;
   font-weight: 400;
 }
-
+/* media querrie- help decide what elemtns or styles to use based on of the dimensions of the device - @media*/
 a:hover {
   background-color: blueviolet;
   border: 1px solid black;
@@ -53,6 +53,7 @@ h1 {
   /* times an animation will loop */
   animation-iteration-count: infinite;
   border-radius: 300px;
+  margin: 50px auto;
 }
 
 @keyframes changeColors {
@@ -80,6 +81,7 @@ h1 {
   border: 1px solid black;
   animation: changeImage 10s;
   animation-iteration-count: infinite;
+  margin: 50px auto;
 }
 
 @keyframes changeImage {
@@ -108,6 +110,7 @@ h1 {
   flex-direction: column;
   row-gap: 100px;
   position: relative; /* Add position relative to contain absolute positioned children */
+  margin: 50px auto;
 }
 
 .slider div {
@@ -116,17 +119,17 @@ h1 {
   border: 1px solid black;
   position: absolute;
   /* absolute - combines it together */
-  background-color: white;
+  background-color: rgb(196, 35, 35);
 }
 
-/* nth child - grabs siblings from whatever element you have selected */
+/* nth child (pseudoclass)- grabs siblings from whatever element you have selected */
 .slider div:nth-child(1) {
   animation: slideIn 2ms;
 }
-
+/* keyframes have more control on how animation is played */
 @keyframes slideIn {
   from {
-    transform: translateX(-500px);
+    transform: translateX(500px);
   }
   to {
     transform: translateX(0);
