@@ -45,8 +45,8 @@ h1 {
 }
 
 .rectangle {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 1px solid black;
   /* forwards value, makes animation stop at last property */
   animation: changeColors 5s forwards, bounce 2s;
@@ -54,6 +54,9 @@ h1 {
   animation-iteration-count: infinite;
   border-radius: 300px;
   margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes changeColors {
