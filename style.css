@@ -68,10 +68,10 @@ h1 {
     background-color: burlywood;
   }
   50% {
-    background-color: red;
+    background-color: rgb(234, 0, 255);
   }
   75% {
-    background-color: green;
+    background-color: rgb(58, 192, 216);
   }
   100% {
     background-color: blue;
@@ -109,7 +109,7 @@ h1 {
 .slider {
   width: 300px;
   height: 200px;
-  border-radius: 75px;
+  border-radius: 80px;
   display: flex;
   flex-direction: column;
   gap: 100px; /* Changed from row-gap to gap */
