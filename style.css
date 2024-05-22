@@ -109,7 +109,7 @@ h1 {
 .slider {
   width: 300px;
   height: 200px;
-  border-radius: 80px;
+  border-radius: 75px;
   display: flex;
   flex-direction: column;
   gap: 100px; /* Changed from row-gap to gap */
