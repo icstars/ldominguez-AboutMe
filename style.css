@@ -105,11 +105,10 @@ h1 {
 .slider {
   width: 300px;
   height: 200px;
-  /* flex - lays out css */
   display: flex;
   flex-direction: column;
-  row-gap: 100px;
-  position: relative; /* Add position relative to contain absolute positioned children */
+  gap: 100px; /* Changed from row-gap to gap */
+  position: relative;
   margin: 50px auto;
 }
 
@@ -118,15 +117,13 @@ h1 {
   height: 150px;
   border: 1px solid black;
   position: absolute;
-  /* absolute - combines it together */
   background-color: rgb(196, 35, 35);
 }
 
-/* nth child (pseudoclass)- grabs siblings from whatever element you have selected */
 .slider div:nth-child(1) {
-  animation: slideIn 2ms;
+  animation: slideIn 2s; /* Changed animation duration to 2 seconds */
 }
-/* keyframes have more control on how animation is played */
+
 @keyframes slideIn {
   from {
     transform: translateX(500px);
