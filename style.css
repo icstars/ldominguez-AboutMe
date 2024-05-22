@@ -106,6 +106,7 @@ h1 {
 .slider {
   width: 300px;
   height: 200px;
+  border-radius: 75px;
   display: flex;
   flex-direction: column;
   gap: 100px; /* Changed from row-gap to gap */
@@ -116,6 +117,7 @@ h1 {
 .slider div {
   width: 300px;
   height: 150px;
+  border-radius: 50px;
   border: 1px solid black;
   position: absolute;
   background-color: rgb(196, 35, 35);
