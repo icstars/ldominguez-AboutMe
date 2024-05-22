@@ -43,3 +43,92 @@ h1 {
 .blue {
   color: blue;
 }
+
+.rectangle {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  /* forwards value, makes animation stop at last property */
+  animation: changeColors 5s forwards, bounce 2s;
+  /* times an animation will loop */
+  animation-iteration-count: infinite;
+  border-radius: 300px;
+}
+
+@keyframes changeColors {
+  /* percentage = specifies what will happen from beginning of animation to the end - ex. 0% */
+  0% {
+    background-color: blue;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.carousel {
+  width: 700px;
+  height: 500px;
+  border: 1px solid black;
+  animation: changeImage 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("https://cdn.ruinmyweek.com/wp-content/uploads/2020/11/09104735/sad-meme-2-1024x885.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50% {
+    background-image: url("https://th.bing.com/th/id/R.ff4f1c6731efd3aef5f2040cc8d12e6f?rik=WpnAglQ20EO7FQ&riu=http%3a%2f%2fhumortechblog.com%2fwp-content%2fuploads%2f2015%2f09%2fsad-frog.png&ehk=lZTXNO2xzawE6uuK6SCFX6dhQo3MejX3o7TP9YkIXDM%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("https://th.bing.com/th/id/R.530cd2ceb4236a54af5808454155b1a9?rik=h48O5EpLNB6J0Q&riu=http%3a%2f%2fimages.memes.com%2fmeme%2f1260118&ehk=gHbVdv%2f79tHwd6GLHp7gkI0fMHzjzUGz5FWicxyNLJs%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.slider {
+  width: 300px;
+  height: 200px;
+  /* flex - lays out css */
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  position: relative; /* Add position relative to contain absolute positioned children */
+}
+
+.slider div {
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  position: absolute;
+  /* absolute - combines it together */
+  background-color: white;
+}
+
+/* nth child - grabs siblings from whatever element you have selected */
+.slider div:nth-child(1) {
+  animation: slideIn 2ms;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
