@@ -76,8 +76,9 @@ h1 {
 }
 
 .carousel {
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: 350px;
+  border-radius: 50px;
   border: 1px solid black;
   animation: changeImage 10s;
   animation-iteration-count: infinite;
