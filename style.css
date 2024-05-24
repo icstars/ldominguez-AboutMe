@@ -21,7 +21,7 @@ a {
   font-family: "Pacifico", cursive;
   font-weight: 400;
 }
-/* media querrie- help decide what elemtns or styles to use based on of the dimensions of the device - @media*/
+
 a:hover {
   background-color: blueviolet;
   border: 1px solid black;
@@ -30,6 +30,7 @@ a:hover {
 
 nav {
   background-color: blueviolet;
+  transition: transform 0.5s ease; /* Add transition for smooth sliding */
 }
 
 h1 {
@@ -48,9 +49,7 @@ h1 {
   width: 250px;
   height: 250px;
   border: 1px solid black;
-  /* forwards value, makes animation stop at last property */
   animation: changeColors 5s forwards, bounce 2s;
-  /* times an animation will loop */
   animation-iteration-count: infinite;
   border-radius: 300px;
   margin: 50px auto;
@@ -60,7 +59,6 @@ h1 {
 }
 
 @keyframes changeColors {
-  /* percentage = specifies what will happen from beginning of animation to the end - ex. 0% */
   0% {
     background-color: blue;
   }
@@ -136,5 +134,18 @@ h1 {
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    transform: translateX(100%); /* Slide the navbar to the right */
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
 }
