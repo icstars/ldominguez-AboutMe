@@ -139,7 +139,10 @@ h1 {
 
 @media screen and (max-width: 800px) {
   nav {
-    transform: translateX(100%); /* Slide the navbar to the right */
+    width: 100px;
+    height: 2000px;
+    position: absolute;
+    /* transform: translateX(100%); Slide the navbar to the right */
   }
 }
 
