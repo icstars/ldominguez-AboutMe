@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuisDominguez-AboutMe</title>
-
+    <title>Luis Dominguez - About Me</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
-      /* Apply styles to all elements */
-      * {
-        box-sizing: border-box;
-      }
-
-      p {
-        color: darksalmon;
-        background-color: slateblue;
-        width: 200px;
-        border-radius: 500px;
+      /* Grid container CSS */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
         padding: 10px;
-        margin: 50px auto; /* Center the paragraph */
       }
-
-      .center-content {
-        text-align: center;
-      }
-
-      .styled-button a {
-        display: inline-block;
-        padding: 10px 20px;
-        color: violet;
-        text-decoration: none;
-        border: 2px solid violet;
+      .grid-item {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ddd;
         border-radius: 5px;
-        transition: background-color 0.3s, color 0.3s;
+        overflow: hidden;
       }
-
-      .styled-button a:hover {
-        background-color: violet;
-        color: white;
+      .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+      }
+      .img-small {
+        height: 100px;
+      }
+      .img-medium {
+        height: 150px;
+      }
+      .img-large {
+        height: 200px;
       }
     </style>
-    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div class="profile">
       <nav>
@@ -52,10 +46,26 @@
         <a href="./Pages/Page3.html">Page 3</a>
       </nav>
       <div class="center-content">
-        <!-- Insert a carousel -->
-        <div class="carousel"></div>
+        <!-- Carousel start here -->
+        <div class="carousel">
+          <div class="slider">
+            <div class="slide">
+              <img src="assets/porfolio1.jpg" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="assets/portfolio,1.jpg" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="assets/portfolio2.jpg" alt="Slide 3" />
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="left">Left</button>
+          <button class="right">Right</button>
+        </div>
         <h1 style="color: cornflowerblue">Luis Dominguez</h1>
-        <div class="slider">
+        <div class="slider-column">
           <div>
             <p style="font-size: large">Sike!</p>
           </div>
@@ -66,15 +76,99 @@
         <a
           href="https://www.linkedin.com/in/luis-dominguez-b5b9871b6/"
           target="_blank"
+          >Follow my professional journey!</a
         >
-          Follow my professional journey!
-        </a>
         <div class="styled-button rectangle">
           <a href="https://i.ytimg.com/vi/CHxWZMZCwS0/maxresdefault.jpg"
             >Please Click</a
           >
         </div>
+
+        <!-- Image grid starts here -->
+        <div class="grid-container">
+          <div class="grid-item">
+            <img
+              src="https://media.giphy.com/media/yyeYzMDU6UJwI/giphy.gif"
+              alt="Image 1"
+              <!--
+              class="img-small"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://th.bing.com/th/id/R.20c62f90970f952024181767f2d0e535?rik=2lv44qtlTuulEQ&riu=http%3a%2f%2fwww.stanceiseverything.com%2fwp-content%2fuploads%2f2012%2f04%2fgif_drift_5.gif&ehk=kf16jE4rTvcPlm89qhtbdTAfS4ZRunHCpsKywhWuDu0%3d&risl=&pid=ImgRaw&r=0"
+              alt="Image 2"
+              <!--
+              class="img-medium"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://66.media.tumblr.com/24eba80edb307c6236409089cfe13a77/tumblr_ow8bxiDygY1s3awymo1_500.gif"
+              alt="Image 3"
+              <!--
+              class="img-large"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://i.pinimg.com/originals/9b/ef/e4/9befe4059ef76c5f933c1219ee4ad4c4.gif"
+              alt="Image 4"
+              <!--
+              class="img-small"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://c.tenor.com/JY5MGOvOSlMAAAAM/nissan-car.gif"
+              alt="Image 5"
+              <!--
+              class="img-medium"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://64.media.tumblr.com/b06434f6de7b80596d236ca1301a2c5e/tumblr_n49axcsrmE1rpdptuo3_500.gifv"
+              alt="Image 6"
+              <!--
+              class="img-large"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://49.media.tumblr.com/496fee3775e577c7a1888140adebe407/tumblr_n45uo4uauH1rnxn7co1_500.gif"
+              alt="Image 7"
+              <!--
+              class="img-small"
+              --
+            />
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://www.iliketowastemytime.com/sites/default/files/amazing-gif-pt3-drifting-240.gif"
+              alt="Image 8"
+              <!--
+              class="img-medium"
+              --
+            />
+            />
+          </div>
+        </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

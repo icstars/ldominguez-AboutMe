@@ -1,11 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: darksalmon;
+  background-color: slateblue;
+  width: 200px;
+  border-radius: 500px;
+  padding: 10px;
+  margin: 50px auto;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.styled-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: violet;
+  text-decoration: none;
+  border: 2px solid violet;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.styled-button a:hover {
+  background-color: violet;
+  color: white;
+}
+
 img {
   width: 150px;
-  border-radius: 500px;
+  /* border-radius: 500px; */
 }
 
 body {
   background-color: tomato;
   font-family: "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 200vh;
 }
 
 button {
@@ -30,7 +69,7 @@ a:hover {
 
 nav {
   background-color: blueviolet;
-  transition: transform 0.5s ease; /* Add transition for smooth sliding */
+  transition: transform 0.5s ease;
 }
 
 h1 {
@@ -77,78 +116,45 @@ h1 {
 }
 
 .carousel {
-  width: 500px;
-  height: 350px;
-  border-radius: 50px;
-  border: 1px solid black;
-  animation: changeImage 10s;
-  animation-iteration-count: infinite;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  border-radius: 150px;
+  overflow: hidden;
   margin: 50px auto;
-}
-
-@keyframes changeImage {
-  0% {
-    background-image: url("https://cdn.ruinmyweek.com/wp-content/uploads/2020/11/09104735/sad-meme-2-1024x885.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  50% {
-    background-image: url("https://th.bing.com/th/id/R.ff4f1c6731efd3aef5f2040cc8d12e6f?rik=WpnAglQ20EO7FQ&riu=http%3a%2f%2fhumortechblog.com%2fwp-content%2fuploads%2f2015%2f09%2fsad-frog.png&ehk=lZTXNO2xzawE6uuK6SCFX6dhQo3MejX3o7TP9YkIXDM%3d&risl=&pid=ImgRaw&r=0");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  100% {
-    background-image: url("https://cdn.ruinmyweek.com/wp-content/uploads/2020/11/09104735/sad-meme-2-1024x885.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
 
 .slider {
-  width: 300px;
-  height: 200px;
-  border-radius: 75px;
+  height: 300px;
+  width: 900px;
   display: flex;
-  flex-direction: column;
-  gap: 100px; /* Changed from row-gap to gap */
-  position: relative;
-  margin: 50px auto;
+  transition: 1s ease;
 }
 
-.slider div {
+.slide {
+  height: 300px;
   width: 300px;
-  height: 150px;
-  border-radius: 50px;
-  border: 1px solid black;
-  position: absolute;
-  background-color: rgb(196, 35, 35);
+  /* border: 1px solid black; */
 }
 
-.slider div:nth-child(1) {
-  animation: slideIn 2s; /* Changed animation duration to 2 seconds */
+.slider img {
+  width: 300px;
+  height: 300px;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(500px);
-  }
-  to {
-    transform: translateX(0);
-  }
+/* Grid container*/
+.grid-container {
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/13;
+  grid-row: 3/10;
 }
 
-@media screen and (max-width: 800px) {
-  nav {
-    width: 100px;
-    height: 2000px;
-    position: absolute;
-    /* transform: translateX(100%); Slide the navbar to the right */
-  }
+.grid-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
+.grid-item:hover {
+  transform: scale(1.1);
 }
