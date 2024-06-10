@@ -158,4 +158,5 @@ h1 {
 .grid-item:hover {
   transform: scale(1.1);
   /* the element will be increased to 110% */
+  transition: 1s ease;
 }
