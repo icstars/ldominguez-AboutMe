@@ -150,11 +150,12 @@ h1 {
 }
 
 .grid-item {
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 1px;
   overflow: hidden;
 }
 
 .grid-item:hover {
   transform: scale(1.1);
+  /* the element will be increased to 110% */
 }
